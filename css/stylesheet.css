@@ -1,0 +1,795 @@
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=Roboto&display=swap');
+
+/* Poppins font family for-heading */
+@font-face {
+    font-family: 'Poppins-bold';
+    src: url('../fonts/Poppins-Bold.woff') format('woff2'),
+        url('../fonts/Poppins-Bold.woff2') format('woff');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url('../fonts/Poppins-SemiBold.woff') format('woff2'),
+        url('../fonts/Poppins-SemiBold.woff2') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Poppins font family close */
+
+/* Roboto font-famaily  */
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.woff') format('woff2'),
+        url('../fonts/Roboto-Regular.woff2') format('woff');
+    font-weight: 400 !important;
+}
+
+/* Roboto font-famaily close  */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins-bold';
+}
+
+span,
+li,
+button,
+a {
+    font-family: 'Roboto-Regular';
+
+}
+
+:root {
+    --text-color: #fff;
+    --btn-bg: #F24026;
+    --style-text: #F24025;
+    --p-text: #000;
+    --bg-one-color: #F24025;
+}
+
+/***** top-bar *****/
+.button-style {
+    display: flex;
+    align-items: center;
+    background-color: var(--btn-bg);
+    padding: 0px 23px;
+    width: max-content;
+    min-height: 46px;
+    border-radius: 25PX;
+}
+
+.button-style li {
+    list-style: none;
+    font-size: 17px;
+    color: var(--text-color);
+    font-family: 'Roboto-Regular';
+}
+
+.button-style li span {
+    margin-left: 5px;
+}
+
+.top-bar {
+    padding: 20px 0px 20px 0px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+
+}
+
+.top-bar .main-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-bar img {
+    object-fit: contain;
+}
+
+/***** End top-bar *****/
+
+/***** header css *****/
+.navbar-brand {
+    display: none;
+}
+
+header {
+    background-color: var(--bg-one-color);
+}
+
+.nav-link {
+    color: var(--text-color) !important;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0px 50px;
+    position: relative;
+    z-index: 7;
+}
+
+
+.nav-link::before {
+    position: absolute;
+    content: '';
+    height: 0px;
+    background-color: white;
+    width: 100%;
+    transition: 0.2s;
+    z-index: -7;
+    top: -20%;
+    transition: 0.2s;
+    left: 0%;
+}
+
+.nav-link:hover {
+    color: var(--p-text) !important;
+}
+
+.nav-link:hover::before {
+    height: 56px;
+}
+
+/***** End header css *****/
+
+
+/***** section-1 *****/
+#section-1 {
+    padding: 60px 0px 0px 0px;
+}
+
+#section-1 .img-box {
+    min-height: 700px;
+    background-image: url(../images/car-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+
+}
+
+#section-1 .left-text {
+    padding: 0px 0px 0px 200px;
+}
+
+#section-1 .left-text .Top {
+    color: var(--style-text);
+    color: #F24025;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 20px;
+    padding-bottom: 4px;
+}
+
+#section-1 .left-text h4 {
+    color: #000;
+    font-size: 64px;
+    width: 100%;
+    max-width: 498px;
+    line-height: 69px;
+    padding-bottom: 15px;
+}
+
+#section-1 .left-text .color {
+    color: var(--style-text);
+    font-weight: 1000;
+}
+
+#section-1 .left-text .p-style {
+    color: var(--p-text);
+    color: #000;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+#section-1 .left-text .book-now {
+    background-color: var(--btn-bg);
+    max-width: 247.556px;
+    width: 100%;
+    height: 51.926px;
+    border-radius: 7px;
+    font-size: 19px;
+    font-weight: 500;
+    color: var(--text-color);
+    border: none;
+    margin-top: 8px;
+
+}
+
+/***** End section-1 *****/
+
+/***** booking *****/
+#booking {
+    background-color: var(--bg-one-color);
+    padding: 58px 0px 47px 0px;
+    margin-top: -92px;
+}
+
+#booking .bg {
+    background-color: #fff;
+    padding: 45px;
+    border-radius: 7px;
+}
+
+#booking .style-box {
+    display: flex;
+    gap: 18px;
+    align-items: center !important;
+}
+
+#booking .style-box .text p {
+    margin: 0px;
+    padding: 0px;
+    color: #F24025;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+#booking .style-box .book-now {
+    background-color: var(--btn-bg);
+    max-width: 247.556px;
+    width: 100%;
+    height: 51.926px;
+    border-radius: 7px;
+    font-size: 19px;
+    font-weight: 500;
+    color: var(--text-color);
+    border: none;
+
+}
+
+#booking .edit {
+    display: flex;
+}
+
+/***** End booking *****/
+
+/***** sell-vehicle *****/
+#sell-vehicle {
+    padding: 55px 0px 50px 0px;
+    position: relative;
+    background-color: #F9F9F9;
+}
+
+#sell-vehicle::before {
+    position: absolute;
+    content: '';
+    background-image: url(../images/textur.png);
+    background-repeat: no-repeat;
+    right: 0%;
+    height: 700px;
+    top: 8%;
+    width: 528px;
+}
+
+#sell-vehicle .left-text {
+    padding: 0px 0px 0px 195px;
+}
+
+#sell-vehicle .left-text h4 {
+    color: var(--p-text);
+    font-size: 45px;
+    line-height: 48px;
+    padding-bottom: 11px;
+}
+
+#sell-vehicle .left-text .for-cars {
+    font-size: 40px;
+    font-weight: 700 !important;
+    color: var(--style-text);
+
+}
+
+#sell-vehicle .left-text .Et-harum {
+    color: #161616;
+    font-size: 16px !important;
+    font-weight: 600;
+}
+
+#sell-vehicle .left-text li {
+    list-style: none;
+    margin: 14px 0px;
+}
+
+#sell-vehicle .left-text li span {
+    color: #161616;
+    font-size: 14px !important;
+    font-weight: 600;
+    margin-left: 17px;
+}
+
+#sell-vehicle .left-text .set-p {
+    padding-bottom: 20px;
+}
+
+#sell-vehicle .left-text .btn-style {
+    border-radius: 59px;
+    background: #F24025;
+    max-width: 222px;
+    min-height: 57.952px;
+    width: 100%;
+    font-size: 19px;
+    color: var(--text-color);
+    box-shadow: 0px 3px 3px 0px rgba(9, 23, 44, 0.25);
+    border: none;
+    margin-top: 40px;
+}
+
+#sell-vehicle .img-box {
+    background-image: url(../images/c-1.png);
+    min-height: 585px;
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 100%;
+    z-index: 777;
+    background-size: cover;
+    margin-top: 50px;
+}
+
+/***** End sell-vehicle *****/
+
+
+
+
+
+.car-sell {
+    padding: 50px 0px 50px 0px;
+    background: #F9F9F9;
+    position: relative;
+}
+
+.car-sell::before {
+    position: absolute;
+    content: '';
+    height: 640px;
+    width: 528px;
+    left: 0%;
+    background-image: url(../images/textur-2.png);
+    top: 55px;
+    background-repeat: no-repeat;
+}
+
+.car-sell .img-box {
+    background-image: url(../images/c-2.png);
+    background-position: left;
+    background-repeat: no-repeat !important;
+    z-index: 777;
+    background-size: cover;
+    width: 100%;
+    min-height: 500px;
+    left: 0%;
+    margin-top: 115px;
+}
+
+.car-sell .right-text {
+    padding-right: 175px;
+}
+
+.car-sell .right-text h4 {
+    color: var(--p-text);
+    font-size: 45px;
+    line-height: 48px;
+    padding-bottom: 11px;
+}
+
+.car-sell .right-text.for-cars {
+    font-size: 40px;
+    font-weight: 700 !important;
+    color: var(--style-text);
+
+}
+
+.car-sell .right-text .Et-harum {
+    color: #161616;
+    font-size: 16px !important;
+    font-weight: 600;
+}
+
+.car-sell .right-text li {
+    list-style: none;
+    margin: 14px 0px;
+}
+
+.car-sell .right-text li span {
+    color: #161616;
+    font-size: 14px !important;
+    font-weight: 600;
+    margin-left: 17px;
+}
+
+.car-sell .right-text .set-p {
+    padding-bottom: 20px;
+}
+
+.car-sell .right-text .btn-style {
+    border-radius: 59px;
+    background: #F24025;
+    max-width: 222px;
+    min-height: 57.952px;
+    width: 100%;
+    font-size: 19px;
+    color: var(--text-color);
+    box-shadow: 0px 3px 3px 0px rgba(9, 23, 44, 0.25);
+    border: none;
+    margin-top: 40px;
+}
+
+/* close css  */
+
+
+/***** section-4 *****/
+#section-4 {
+    padding: 55px 0px 55px 0px;
+    background-color: #F9F9F9;
+    position: relative;
+}
+
+#section-4::before {
+    position: absolute;
+    content: "";
+    background-image: url(../images/textur.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 579px;
+    width: 491px;
+    right: 1%;
+    top: 10%;
+}
+
+#section-4 .left-text {
+    padding-left: 190px;
+}
+
+#section-4 .left-text h4 {
+    color: var(--p-text);
+    font-size: 33px;
+    line-height: 43px;
+    padding-bottom: 11px;
+}
+
+#section-4 .left-text .for-cars {
+    font-size: 40px;
+    font-weight: 700 !important;
+    color: var(--style-text);
+
+}
+
+#section-4 .left-text .Et-harum {
+    color: #161616;
+    font-size: 16px !important;
+    font-weight: 600;
+}
+
+#section-4 .left-text li {
+    list-style: none;
+    margin: 14px 0px;
+}
+
+#section-4 .left-text li span {
+    color: #161616;
+    font-size: 14px !important;
+    font-weight: 600;
+    margin-left: 17px;
+}
+
+#section-4 .left-text .set-p {
+    padding-bottom: 20px;
+}
+
+#section-4 .left-text .btn-style {
+    border-radius: 59px;
+    background: #F24025;
+    max-width: 222px;
+    min-height: 57.952px;
+    width: 100%;
+    font-size: 19px;
+    color: var(--text-color);
+    box-shadow: 0px 3px 3px 0px rgba(9, 23, 44, 0.25);
+    border: none;
+    margin-top: 40px;
+}
+
+#section-4 .img-box {
+    background-image: url("../images/c-3.png");
+    background-position: left;
+    background-repeat: no-repeat !important;
+    z-index: 777 !important;
+    background-size: cover;
+    width: 100%;
+    min-height: 500px;
+    margin-top: 95px;
+}
+
+/***** End section-4 *****/
+
+/***** made-easy *****/
+.made-easy {
+    padding: 50px 0px 30px 0px;
+    background-color: var(--bg-one-color);
+}
+
+.made-easy .style-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.made-easy .style-box h4 {
+    color: #F24025;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Poppins-SemiBold';
+    padding-bottom: 6px;
+}
+
+.made-easy .style-box p {
+    color: #F24025;
+    letter-spacing: 0.75px;
+    font-weight: 600;
+
+}
+
+.made-easy .padding {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.made-easy .img-box img {
+    padding: 0px;
+    height: 163px;
+}
+
+.made-easy .img-box .set {
+    width: 389.584px;
+    height: 152.313px;
+}
+
+
+.made-easy .style-box .Save {
+    color: #F24025;
+    letter-spacing: 0.75px;
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.made-easy .more {
+    text-align: center;
+    color: #FFF;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Poppins-SemiBold';
+    padding-bottom: 15px;
+
+}
+
+.made-easy .Get {
+    width: 100%;
+    max-width: 435px;
+    margin: auto;
+    text-align: center;
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 0.75px;
+    padding-bottom: 18px;
+
+}
+
+/***** End made-easy *****/
+
+
+/***** market-value *****/
+.market-value {
+    padding: 100px 0px 100px 0px;
+    background: #F9F9F9;
+}
+
+.market-value h4 {
+    font-size: 45px;
+    text-transform: capitalize;
+    font-family: 'Poppins-SemiBold';
+    text-align: center;
+}
+
+.market-value .getcl {
+    color: #000;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 0.75px;
+    font-weight: 600;
+    width: 100%;
+    max-width: 459px;
+    margin: auto;
+    padding-top: 7px;
+    padding-bottom: 57px;
+}
+
+.market-value .box-style {
+    border-radius: 14px;
+    background: #FFF;
+    width: 178.025px;
+    height: 145.737px;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 30px;
+}
+
+.market-value .box-style h5 {
+    color: var(--style-text);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/***** End market-value *****/
+
+
+/***** contact-us *****/
+.contact-us {
+    min-height: 274px;
+    background-image: url("../images/bg-1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.contact-us h4 {
+    color: #FFF;
+    font-size: 60px;
+    padding-bottom: 18px;
+    font-family: 'Poppins-SemiBold';
+
+}
+
+/***** End contact-us *****/
+
+
+/***** affordable-car *****/
+#affordable-car {
+    padding: 90px 0px 35px 0px;
+    background-color: #F9F9F9;
+}
+
+
+#affordable-car .img-box {
+    background-image: url("../images/v-1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 550px;
+    padding-right: 20px;
+}
+
+#affordable-car .right-box h4 {
+    font-size: 45px;
+    line-height: 49px;
+}
+
+#affordable-car .right-box p {
+    color: #000;
+    font-size: 20px;
+    padding-top: 9px;
+    line-height: 33px;
+}
+
+#affordable-car .right-box {
+    padding-right: 100px;
+    padding-left: 30px;
+}
+
+#affordable-car .right-box button {
+    border-radius: 59px;
+    background: #F24025;
+    max-width: 222px;
+    min-height: 57.952px;
+    width: 100%;
+    font-size: 19px;
+    color: var(--text-color);
+    box-shadow: 0px 3px 3px 0px rgba(9, 23, 44, 0.25);
+    border: none;
+    margin-top: 13px;
+}
+
+/***** End affordable-car *****/
+
+/***** footer *****/
+footer {
+    padding: 80px 0px 0px 0px;
+    background: #FCF5F2;
+}
+
+footer .left-side h4 {
+    color: #000;
+    font-size: 25px;
+}
+
+footer .left-side p {
+    color: #626161;
+    font-size: 18px;
+    padding-top: 7px;
+    width: 100%;
+    max-width: 700px;
+    line-height: 28px;
+    padding-bottom: 7px;
+}
+
+footer .right-side h4 {
+    color: #000;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+footer .right-side {
+    padding-left: 50px;
+}
+
+footer .right-side li {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+footer .right-side li span {
+    color: #626161;
+    font-size: 17px;
+    line-height: 35px;
+}
+
+footer .right-side li i {
+    color: #626161;
+
+}
+
+footer .left-side .icon {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 55px;
+}
+
+footer .left-side .icon i {
+    width: 44.217px;
+    height: 44.217px;
+    color: var(--text-color);
+    background-color: var(--bg-one-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .left-side .Copyright {
+    color: #626161;
+    font-size: 18px;
+}
+
+footer .Privacy {
+    text-align: right;
+    color: #000;
+    font-size: 19.69px;
+    margin: 0px;
+    padding: 20px 0px 25px 0px;
+}
+
+/***** End footer *****/
