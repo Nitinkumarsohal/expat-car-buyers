@@ -107,7 +107,7 @@ header {
 }
 
 .nav-link {
-    color: var(--text-color) !important;
+    color: var(--text-color);
     font-size: 16px;
     font-weight: 600;
     margin: 0px 50px;
@@ -135,6 +135,9 @@ header {
 
 .nav-link:hover::before {
     height: 56px;
+}
+.nav-link:focus{
+    color: var(--p-text) !important;
 }
 
 /***** End header css *****/
@@ -174,7 +177,7 @@ header {
     width: 100%;
     max-width: 498px;
     line-height: 69px;
-    padding-bottom: 15px;
+    padding-bottom: 12px;
 }
 
 #section-1 .left-text .color {
@@ -209,12 +212,12 @@ header {
 #booking {
     background-color: var(--bg-one-color);
     padding: 58px 0px 47px 0px;
-    margin-top: -92px;
+    margin-top: -76px;
 }
 
 #booking .bg {
     background-color: #fff;
-    padding: 45px;
+    padding: 38px;
     border-radius: 7px;
 }
 
@@ -253,7 +256,7 @@ header {
 
 /***** sell-vehicle *****/
 #sell-vehicle {
-    padding: 55px 0px 50px 0px;
+    padding: 95px 0px 50px 0px;
     position: relative;
     background-color: #F9F9F9;
 }
@@ -265,7 +268,7 @@ header {
     background-repeat: no-repeat;
     right: 0%;
     height: 700px;
-    top: 8%;
+    top: 10%;
     width: 528px;
 }
 
@@ -330,7 +333,7 @@ header {
     width: 100%;
     z-index: 777;
     background-size: cover;
-    margin-top: 50px;
+    margin-top: 24px;
 }
 
 /***** End sell-vehicle *****/
@@ -340,7 +343,7 @@ header {
 
 
 .car-sell {
-    padding: 50px 0px 50px 0px;
+    padding: 95px 0px 50px 0px;
     background: #F9F9F9;
     position: relative;
 }
@@ -352,7 +355,7 @@ header {
     width: 528px;
     left: 0%;
     background-image: url(../images/textur-2.png);
-    top: 55px;
+    top: 100px;
     background-repeat: no-repeat;
 }
 
@@ -365,7 +368,7 @@ header {
     width: 100%;
     min-height: 500px;
     left: 0%;
-    margin-top: 115px;
+    margin-top: 105px;
 }
 
 .car-sell .right-text {
@@ -426,7 +429,7 @@ header {
 
 /***** section-4 *****/
 #section-4 {
-    padding: 55px 0px 55px 0px;
+    padding: 95px 0px 95px 0px;
     background-color: #F9F9F9;
     position: relative;
 }
@@ -440,7 +443,7 @@ header {
     height: 579px;
     width: 491px;
     right: 1%;
-    top: 10%;
+    top: 12%;
 }
 
 #section-4 .left-text {
@@ -497,21 +500,21 @@ header {
 }
 
 #section-4 .img-box {
-    background-image: url("../images/c-3.png");
+    background-image: url(../images/c-3.png);
     background-position: left;
     background-repeat: no-repeat !important;
     z-index: 777 !important;
     background-size: cover;
     width: 100%;
     min-height: 500px;
-    margin-top: 95px;
+    margin-top: 85px;
 }
 
 /***** End section-4 *****/
 
 /***** made-easy *****/
 .made-easy {
-    padding: 50px 0px 30px 0px;
+    padding: 50px 0px 35px 0px;
     background-color: var(--bg-one-color);
 }
 
@@ -523,12 +526,59 @@ header {
     margin: 30px 0px;
 }
 
+
 .made-easy .style-box h4 {
     color: #F24025;
     text-align: center;
     font-size: 30px;
     font-family: 'Poppins-SemiBold';
     padding-bottom: 6px;
+}
+
+.made-easy .line {
+    position: relative;
+}
+
+.made-easy .line::before {
+    position: absolute;
+    content: "";
+    width: 32%;
+    left: 100%;
+    border: 2px dashed #fff;
+    bottom: 50%;
+}
+
+.made-easy .line::after {
+    position: absolute;
+    content: "";
+    width: 11%;
+    border: 2px dashed #fff;
+    transform: rotate(90deg);
+    left: 43%;
+    top: 113%;
+}
+
+.made-easy .line-2 {
+    position: relative;
+}
+
+.made-easy .line-2::before {
+    position: absolute;
+    content: "";
+    width: 12%;
+    border: 2px dashed #fff;
+    transform: rotate(90deg);
+    left: 45%;
+    top: -17%;
+}
+
+.made-easy .line-2::after {
+    position: absolute;
+    content: '';
+    width: 32%;
+    border: 2px dashed #fff;
+    bottom: 50%;
+    left: -32%;
 }
 
 .made-easy .style-box p {
@@ -546,11 +596,13 @@ header {
 .made-easy .img-box img {
     padding: 0px;
     height: 163px;
+    object-fit: contain;
 }
 
 .made-easy .img-box .set {
     width: 389.584px;
     height: 152.313px;
+    object-fit: contain;
 }
 
 
@@ -568,8 +620,8 @@ header {
     text-align: center;
     font-size: 50px;
     font-family: 'Poppins-SemiBold';
-    padding-bottom: 15px;
-
+    padding-bottom: 11px;
+    padding-top: 12px;
 }
 
 .made-easy .Get {
@@ -581,8 +633,7 @@ header {
     text-align: center;
     font-size: 15px;
     letter-spacing: 0.75px;
-    padding-bottom: 18px;
-
+    padding-bottom: 22px;
 }
 
 /***** End made-easy *****/
@@ -590,7 +641,7 @@ header {
 
 /***** market-value *****/
 .market-value {
-    padding: 100px 0px 100px 0px;
+    padding: 100px 0px 105px 0px;
     background: #F9F9F9;
 }
 
@@ -653,10 +704,21 @@ header {
     margin: auto;
 }
 
+.contact-us .colors {
+    background-color: white;
+    color: var(--style-text) !important;
+    padding: 0px 41px 0px 41px;
+}
+
+/* .contact-us .colors i,
+span {
+    color: red;
+} */
+
 .contact-us h4 {
     color: #FFF;
     font-size: 60px;
-    padding-bottom: 18px;
+    padding-bottom: 22px;
     font-family: 'Poppins-SemiBold';
 
 }
@@ -666,10 +728,9 @@ header {
 
 /***** affordable-car *****/
 #affordable-car {
-    padding: 90px 0px 35px 0px;
+    padding: 95px 0px 50px 0px;
     background-color: #F9F9F9;
 }
-
 
 #affordable-car .img-box {
     background-image: url("../images/v-1.png");
@@ -715,7 +776,7 @@ header {
 
 /***** footer *****/
 footer {
-    padding: 80px 0px 0px 0px;
+    padding: 95px 0px 0px 0px;
     background: #FCF5F2;
 }
 
@@ -727,10 +788,10 @@ footer .left-side h4 {
 footer .left-side p {
     color: #626161;
     font-size: 18px;
-    padding-top: 7px;
+    padding-top: 10px;
     width: 100%;
     max-width: 700px;
-    line-height: 28px;
+    line-height: 30px;
     padding-bottom: 7px;
 }
 
@@ -747,25 +808,24 @@ footer .right-side {
 footer .right-side li {
     display: flex;
     gap: 12px;
-    align-items: center;
     margin: 10px 0px;
 }
 
 footer .right-side li span {
     color: #626161;
-    font-size: 17px;
-    line-height: 35px;
+    font-size: 18px;
+    line-height: 33px;
 }
 
 footer .right-side li i {
     color: #626161;
-
+    margin-top: 12px;
 }
 
 footer .left-side .icon {
     display: flex;
     gap: 10px;
-    padding-bottom: 55px;
+    padding-bottom: 57px;
 }
 
 footer .left-side .icon i {
@@ -789,7 +849,7 @@ footer .Privacy {
     color: #000;
     font-size: 19.69px;
     margin: 0px;
-    padding: 20px 0px 25px 0px;
+    padding: 26px 0px 25px 0px;
 }
 
 /***** End footer *****/
