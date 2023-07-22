@@ -675,10 +675,10 @@
         font-size: 13px !important;
     }
 
-   .market-value .box-style {
-    min-width: 275px !important;
-    margin: 12px 0px !important;
-}
+    .market-value .box-style {
+        min-width: 240px !important;
+        margin: 12px 0px !important;
+    }
 
     .contact-us h4 {
         font-size: 20px !important;
